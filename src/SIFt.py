@@ -151,8 +151,9 @@ class SIFt_generator:
 			return 1
 		return 0
 
-	# TODO
 	def get_charged_interaction(self, residue_name):
+		if residue_name in self.CHARGED_RESIDUES:
+			return 1
 		return 0
 
 	def get_hbond_donors(self, compound, residue_name, residue_atoms):
